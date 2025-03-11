@@ -6,12 +6,12 @@ import numpy as np
 from hitnet import HitNet, ModelType, draw_disparity, draw_depth, CameraConfig
 
 # Initialize video
-# cap = cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture("video.mp4")
 
-videoUrl = 'https://youtu.be/Yui48w71SG0'
-videoPafy = pafy.new(videoUrl)
-print(videoPafy.streams)
-cap = cv2.VideoCapture(videoPafy.getbestvideo().url)
+# videoUrl = 'https://youtu.be/Yui48w71SG0'
+# videoPafy = pafy.new(videoUrl)
+# print(videoPafy.streams)
+# cap = cv2.VideoCapture(videoPafy.getbestvideo().url)
 
 
 # Select model type

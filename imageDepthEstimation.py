@@ -21,8 +21,11 @@ elif model_type == ModelType.eth3d:
 hitnet_depth = HitNet(model_path, model_type)
 
 # Load images
-left_img = load_img("https://vision.middlebury.edu/stereo/data/scenes2003/newdata/cones/im2.png")
-right_img = load_img("https://vision.middlebury.edu/stereo/data/scenes2003/newdata/cones/im6.png")
+# left_img = load_img("https://vision.middlebury.edu/stereo/data/scenes2003/newdata/cones/im2.png")
+# right_img = load_img("https://vision.middlebury.edu/stereo/data/scenes2003/newdata/cones/im6.png")
+
+left_img = load_img("000000_10.png")
+right_img = load_img("000000_11.png")
 
 # Estimate the depth
 disparity_map = hitnet_depth(left_img, right_img)
